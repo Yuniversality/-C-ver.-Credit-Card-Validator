@@ -4,8 +4,23 @@
 
 int main(int argc, char* argv[])
 {
-	testingFromFile();
-	//testingFromUserInput();
+	std::cout << "Do you want to test from user input or from file? \n";
+	std::cout << "Type 0 for user input, 1 for file input \n";
+	char inputChoice = ' ';
+	std::cin >> inputChoice;
+	while ((inputChoice != '0') && (inputChoice != '1'))
+	{
+		std::cout << "Please enter 0 for user input, 1 for file input \n";
+		std::cin >> inputChoice;
+	}
+	if (inputChoice == '1')
+	{
+		testingFromFile();
+	}
+	else
+	{
+		testingFromUserInput();
+	}
 
 	return 0;
 }
@@ -48,7 +63,8 @@ void testingFromUserInput(void)
 void testingFromFile(void)
 {
 	std::string line;
-	std::ifstream inputFile("creditCardNumbers.txt");
+	//std::ifstream inputFile("creditCardNumbers.txt");
+	std::ifstream inputFile("userInput.txt");
 	if (inputFile.is_open())
 	{
 		while (getline(inputFile, line))
