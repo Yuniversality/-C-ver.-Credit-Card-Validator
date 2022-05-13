@@ -19,11 +19,13 @@ in, and typing in:
 > ./creditCardValidator.exe
 
 If you are using Windows, download the _[C++ Version] Credit Card Number Validator_ folder
-from this Github and run it in an IDE like Visual Studio. I unfortunately have not figured 
-out how to compile it into a Windows executable yet.
+from this Github and navigate to it in your file explorer and run the _windowsCreditCardValidator.exe_
+file.  
 
 **If you are going to test using File Input, you must put the numbers you want to test in
 the _userInput.txt_ file**  
+_(If you choose to read from file input and don't have anything in the _userInpit.txt_ file, then the
+program will auto-terminate)_  
 That file is the designated file the program reads from. The program will terminate after
 the file has been read and the numbers validated.  
 If you want some valid dummy credit card numbers, check the _creditCardNumbers.txt_ and 
@@ -56,3 +58,5 @@ Websites Used for Programming Help:
 > Input/output with files https://www.cplusplus.com/doc/tutorial/files/  
 > Substring in C++ https://www.tutorialspoint.com/substring-in-cplusplus#:~:text=A%20function%20to%20obtain%20a,of%20characters%20in%20a%20substring.  
 
+Compiling on Windows
+> Walkthrough: Compile a C program on the command line https://docs.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line?view=msvc-170
