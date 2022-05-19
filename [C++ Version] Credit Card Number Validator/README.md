@@ -5,7 +5,7 @@ By Ethan Yu
 This credit card validator takes in a credit card number (either from user or file input) and 
 sees if the number would be a valid credit card number. If valid, then it will try to deduce 
 the issuing company.  
-Currently, the following companies are supported: __Visa, Mastercard, American Express (AMEX)
+Currently, the following companies are supported: __Visa, Mastercard, American Express (AMEX),
 Discover, Diner's Club, Japanese Credit Bureau (JCB), UnionPay__. All other valid numbers
 will be labeled as "Other".  
 
