@@ -16,7 +16,7 @@ the number is active/in-use and chargable.
 If you are on a Linux system, download the _[C++ Version] Credit Card Number Validator_ folder 
 from this Github and run it by opening the terminal, going into the directory it is downloaded 
 in, and typing in: 
-> ./creditCardValidator.exe
+> ./linuxCreditCardValidator.exe
 
 If you are using Windows, download the _[C++ Version] Credit Card Number Validator_ folder
 from this Github and navigate to it in your file explorer and run the _windowsCreditCardValidator.exe_
