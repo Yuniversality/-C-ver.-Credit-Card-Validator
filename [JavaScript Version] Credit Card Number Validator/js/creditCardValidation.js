@@ -1,35 +1,46 @@
-// When the DOM is ready, run these
-$(function() {
+// When page loads, do these functions
+window.onload = function pageLoad() {
+    console.log("The page has loaded"); 
     addYearOptions();
-});
+}
 
 // Function for adding options to the year option select 
 function addYearOptions()
 {
-    // Get today's date
-    let today = new Date();
-    // Get the year of today
-    let thisYear = today.getFullYear();
+    let today = new Date();  
+    const yearSelect = document.getElementById("expiration_year"); 
 
-    // Add in options for the next decade's years (inclusive) 
-    $("#year-select").append("<option value='" + thisYear + "'>" + thisYear + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+1) + "'>" + (thisYear+1) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+2) + "'>" + (thisYear+2) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+3) + "'>" + (thisYear+3) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+4) + "'>" + (thisYear+4) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+5) + "'>" + (thisYear+5) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+6) + "'>" + (thisYear+6) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+7) + "'>" + (thisYear+7) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+8) + "'>" + (thisYear+8) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+9) + "'>" + (thisYear+9) + "</option>");
-    $("#year-select").append("<option value='" + (thisYear+10) + "'>" + (thisYear+10) + "</option>");
-
-    // Refresh option select so the new values show up
-    $("#year-select").selectpicker("refresh");
+    for (let i = 0; i <= 10; i++)
+    {
+        let newOption = document.createElement("option");
+        newOption.textContent = Number(today.getFullYear()) + i;
+        yearSelect.append(newOption);
+    } 
 }
 
 function validateCreditCardNumber()
 {
-    let userInput = document.getElementById("credit-card-number-input").value;
+    let userInput = document.getElementById("credit_card_number_input");
+    //console.log(userInput.value);
+    let inputString = (userInput.value).toString();
+    //console.log(inputString.length);
+    const input_addon = document.getElementById("credit_card_logo");
+    
+    if (inputString.length == 1)
+    {
+        console.log("UserInput length = " + userInput.length);
+        //input_addon.setAttribute("src", "../[JavaScript Version] Credit Card Number Validator/img/American_Express_logo_(2018).svg");
+        input_addon.src = "../[JavaScript Version] Credit Card Number Validator/img/American_Express_logo_(2018).svg";
+    }
+    else
+    {
+        //input_addon.setAttribute("src","");
+        input_addon.src = "../[JavaScript Version] Credit Card Number Validator/img/Blue_question_mark_icon.svg";
+    }
+}
+
+function passesLuhnsAlgorithm(creditCardNumber)
+{
+    let runningSum = 0;
     
 }
