@@ -63,7 +63,6 @@ void testingFromUserInput(void)
 void testingFromFile(void)
 {
 	std::string line;
-	//std::ifstream inputFile("creditCardNumbers.txt");
 	std::ifstream inputFile("userInput.txt");
 	if (inputFile.is_open())
 	{
@@ -104,5 +103,4 @@ void testingFromFile(void)
 * isdigit https://www.cplusplus.com/reference/cctype/isdigit/
 * Input/output with files https://www.cplusplus.com/doc/tutorial/files/
 * Substring in C++ https://www.tutorialspoint.com/substring-in-cplusplus#:~:text=A%20function%20to%20obtain%20a,of%20characters%20in%20a%20substring.
-* 
 */
