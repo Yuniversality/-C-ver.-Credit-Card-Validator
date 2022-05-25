@@ -13,14 +13,12 @@ Please note: This program only tells you if the credit card number is possible, 
 the number is active/in-use and chargable.  
 
 ## How to Use  
-If you are on a Linux system, download the _[C++ Version] Credit Card Number Validator_ folder 
-from this Github and run it by opening the terminal, going into the directory it is downloaded 
-in, and typing in: 
+If you are on a Linux system, download the files from this Github repo and run it by opening 
+the terminal, going into the directory it is downloaded in, and typing in: 
 > ./linuxCreditCardValidator.exe
 
-If you are using Windows, download the _[C++ Version] Credit Card Number Validator_ folder
-from this Github and navigate to it in your file explorer and run the _windowsCreditCardValidator.exe_
-file.  
+If you are using Windows, download the files from this Github repo and navigate to it in your 
+file explorer and run the _windowsCreditCardValidator.exe_ file.  
 
 **If you are going to test using File Input, you must put the numbers you want to test in
 the _userInput.txt_ file**  
@@ -35,7 +33,6 @@ the _userInput.txt_ file.
 If you are testing using user input, then follow the on-screen prompts.
 
 ## Resources Used
-_Also noted in the main.cpp file_  
 Websites Used for Research:  
 > Luhn Number Checksum https://www.dcode.fr/luhn-algorithm  
 > Luhn algorithm https://www.geeksforgeeks.org/luhn-algorithm/  
