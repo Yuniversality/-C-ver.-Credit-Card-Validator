@@ -1,6 +1,8 @@
 # Credit Card Validator (C++ Ver.)  
 By Ethan Yu  
 
+### Link to HTML/CSS/JavaScript version: https://github.com/Yuniversality/-HTML-CSS-JavaScript-ver.-Credit-Card-Validator  
+
 ## What is it?  
 This credit card validator takes in a credit card number (either from user or file input) and 
 sees if the number would be a valid credit card number. If valid, then it will try to deduce 
